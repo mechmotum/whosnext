@@ -53,6 +53,8 @@ presentations = {
     '2021-04-07': ['Eline van der Kruk'],
     '2021-04-22': ['Leila Alizadehsaravi'],
     '2021-05-05': ['Jason Moore', 'Joris Ravenhorst', 'Jan Groenhuis'],
+    '2021-05-20': ['Marco Reijne', 'Joris Kuiper'],
+    '2021-06-03': ['Arend Schwab'],
 }
 
 # the longer time since you've presented the higher your chance of being chosen
