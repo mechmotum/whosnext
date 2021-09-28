@@ -24,18 +24,19 @@ from pyfiglet import figlet_format
 
 current_members = [
     'Arend Schwab',
+    'Daniel Landre',
     'Eline van der Kruk',
-    'Jan Groenhuis',
+    'Francesca Andretta',
+    'Jan Heinen',
     'Jason Moore',
     'Jelle Haasnoot',
-    'Joris Kuiper',
-    'Joris Ravenhorst',
     'Julie van Vlerken',
     'Koen Jongbloed',
     'Leila Alizadehsaravi',
     'Marco Reijne',
     'Rado Dukalski',
     'Shannon van de Velde',
+    'Simonas Drauksas',
     'Tim Huiskens',
 ]
 
@@ -55,6 +56,8 @@ presentations = {
     '2021-05-05': ['Jason Moore', 'Joris Ravenhorst', 'Jan Groenhuis'],
     '2021-05-20': ['Marco Reijne', 'Joris Kuiper'],
     '2021-06-03': ['Arend Schwab'],
+    '2021-06-17': ['Koen Jongbloed'],
+    '2021-09-28': ['Tim Huiskens'],
 }
 
 # the longer time since you've presented the higher your chance of being chosen
