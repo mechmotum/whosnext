@@ -37,6 +37,7 @@ current_members = [
     'Shannon van de Velde',
     'Simonas Drauksas',
     'Tim Huiskens',
+    'Ajaypal Singh',
 ]
 
 # NOTE : Make sure spellings match current_members exactly! This should be
@@ -60,6 +61,8 @@ presentations = {
     '2021-10-12': ['Leila Alizadehsaravi'],
     '2021-10-26': ['Jan Heinen'],
     '2021-11-09': ['Marco Reijne'],
+    '2021-12-07': ['Dorus de Boer'],
+    '2022-01-18': ['Jason Moore'],
 }
 
 # the longer time since you've presented the higher your chance of being chosen
