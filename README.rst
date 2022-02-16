@@ -13,4 +13,11 @@ Dependencies:
 
 Either ``pip install pyfiglet`` or ``conda install -c conda-forge pyfiglet``
 
+You may experience issues due to having multiple Python installations on your machine, in which case troubleshoot with: 
+
+   - Linux/MacOS: ``which python``, ``python --version``, ``whereis python``, ``ls -ls /usr/bin/python*``, 
+   - Windows: ``python --version``, ``C:\Users\admin>py -0p``
+   
+and target the specific version when installing pyfiglet ``python3.9 -m pip install pyfiglet`` (3.9 or your specific version) and running whosnext.py with ``python3.9 whosnext.py``.
+
 License: MIT
