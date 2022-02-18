@@ -3,9 +3,10 @@ presenter.
 
 How to use:
 
-    1. Update the list of current members.
-    2. Add the most recent presentations.
-    3. Run ``python whosnext.py``
+    1. Update the MC.
+    2. Update the list of current members.
+    3. Add the most recent presentations.
+    4. Run ``python whosnext.py``
 
 Dependencies:
 
