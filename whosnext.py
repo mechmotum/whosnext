@@ -22,6 +22,8 @@ import time
 
 from pyfiglet import figlet_format
 
+current_mc = 'Tim Huiskens'
+
 current_members = [
     'Daniel Landre',
     'Dorus de Boer',
@@ -85,7 +87,9 @@ for date, presenters in presentations.items():
 
         if presenter not in current_members:  # no longer in lab
             weights[presenter] = 0
-        elif days_since_pres < 15:  # presented recently
+        elif presenter == current_mc:  # current MC doesn't speak
+            weights[presenter] = 0
+        elif days_since_pres < 63:  # presented recently (within 2 months)
             weights[presenter] = 0
         else:  # 150 if not presented in six months, otherwise scaled
             weights[presenter] = min(150, days_since_pres*6/7)
