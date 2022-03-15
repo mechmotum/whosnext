@@ -26,6 +26,7 @@ current_members = [
     'Daniel Landre',
     'Dorus de Boer',
     'Eline van der Kruk',
+    'Evelijn Verboom',
     'Francesca Andretta',
     'Jan Heinen',
     'Jason Moore',
@@ -67,6 +68,8 @@ presentations = {
     '2022-01-18': ['Jason Moore'],
     '2022-02-01': ['Leila Alizadehsaravi'],
     '2022-02-15': ['Jan Heinen'],
+    '2022-03-01': ['Rado Dukalski'],
+    '2022-03-15': ['Marco Reijne'],
 }
 
 # the longer time since you've presented the higher your chance of being chosen
