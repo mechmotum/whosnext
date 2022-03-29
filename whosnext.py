@@ -28,6 +28,7 @@ current_members = [
     'Daniel Landre',
     'Dorus de Boer',
     'Eline van der Kruk',
+    'Evelijn Verboom',
     'Francesca Andretta',
     'Jan Heinen',
     'Jason Moore',
@@ -56,10 +57,11 @@ presentations = {
     '2021-03-25': ['Eline van der Kruk', 'Jan Groenhuis', 'Jason Moore'],
     '2021-04-07': ['Eline van der Kruk'],
     '2021-04-22': ['Leila Alizadehsaravi'],
-    '2021-05-05': ['Jason Moore', 'Joris Ravenhorst', 'Jan Groenhuis'],
+    '2021-05-06': ['Jason Moore', 'Joris Ravenhorst', 'Jan Groenhuis'],
     '2021-05-20': ['Marco Reijne', 'Joris Kuiper'],
     '2021-06-03': ['Arend Schwab'],
     '2021-06-17': ['Koen Jongbloed'],
+    '2021-09-14': ['Rado Dukalski'],
     '2021-09-28': ['Tim Huiskens'],
     '2021-10-12': ['Leila Alizadehsaravi'],
     '2021-10-26': ['Jan Heinen'],
@@ -68,6 +70,8 @@ presentations = {
     '2022-01-18': ['Jason Moore'],
     '2022-02-01': ['Leila Alizadehsaravi'],
     '2022-02-15': ['Jan Heinen'],
+    '2022-03-01': ['Rado Dukalski'],
+    '2022-03-15': ['Marco Reijne'],
 }
 
 # the longer time since you've presented the higher your chance of being chosen
