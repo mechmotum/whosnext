@@ -70,6 +70,7 @@ presentations = {
     '2022-02-15': ['Jan Heinen'],
     '2022-03-01': ['Rado Dukalski'],
     '2022-03-15': ['Marco Reijne'],
+    '2022-03-29': ['Leila Alizadehsaravi'],
 }
 
 # the longer time since you've presented the higher your chance of being chosen
