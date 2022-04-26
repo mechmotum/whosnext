@@ -3,9 +3,10 @@ presenter.
 
 How to use:
 
-    1. Update the list of current members.
-    2. Add the most recent presentations.
-    3. Run ``python whosnext.py``
+    1. Update the MC.
+    2. Update the list of current members.
+    3. Add the most recent presentations.
+    4. Run ``python whosnext.py``
 
 Dependencies:
 
@@ -21,6 +22,8 @@ import random
 import time
 
 from pyfiglet import figlet_format
+
+current_mc = 'Tim Huiskens'
 
 current_members = [
     'Daniel Landre',
@@ -89,7 +92,9 @@ for date, presenters in presentations.items():
 
         if presenter not in current_members:  # no longer in lab
             weights[presenter] = 0
-        elif days_since_pres < 15:  # presented recently
+        elif presenter == current_mc:  # current MC doesn't speak
+            weights[presenter] = 0
+        elif days_since_pres < 63:  # presented recently (within 2 months)
             weights[presenter] = 0
         else:  # 150 if not presented in six months, otherwise scaled
             weights[presenter] = min(150, days_since_pres*6/7)
