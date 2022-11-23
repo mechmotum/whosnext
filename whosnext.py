@@ -23,34 +23,22 @@ import time
 
 from pyfiglet import figlet_format
 
-current_mc = 'Tim Huiskens'
+current_mc = 'Jan van der Schot'
 
 current_members = [
-    #'Daniel Landre',
-    #'Dorus de Boer',
-    #'Evelijn Verboom',
-    #'Francesca Andretta',
+    'Andrew Dressel',
+    'Christoph Schmidt',
+    'Floris van Willigen',
     'Jan Heinen',
+    'Jan van der Schot',
     'Jason Moore',
+    'Jens Keijser',
     'Julie van Vlerken',
+    'Kenneth Pasma',
     'Leila Alizadehsaravi',
-    #'Marco Reijne',
     'Rado Dukalski',
-    #'Simonas Drauksas',
-    #'Tim Huiskens', 
-    #'Ajaypal Singh',
-    #'Jeswin Koshy Cherian',
-    #'Jelle Haasnoot',
     'Sam Brockie',
     'Timo Stienstra',
-    'Jan van der Schot',
-    'Floris van Willigen',
-    'Andrew Dressel',
-    #'Evelijn Verboom',
-    'Jens Keijser',
-    'Christoph Schmidt',
-    'Kenneth Pasma'
-    
 ]
 
 # NOTE : Make sure spellings match current_members exactly! This should be
@@ -94,9 +82,7 @@ presentations = {
     '2022-10-11': ['Jens Keijser'],
     '2022-10-25': ['Julie van Vlerken'],
     '2022-11-08': ['Jan van der Schot'],
-    '2022-11-22': ['Timo Stienstra']
-  
-
+    '2022-11-22': ['Timo Stienstra'],
 }
 
 # the longer time since you've presented the higher your chance of being chosen
