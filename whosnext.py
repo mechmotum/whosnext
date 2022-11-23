@@ -23,20 +23,31 @@ import time
 from pyfiglet import figlet_format
 
 current_members = [
-    'Daniel Landre',
-    'Dorus de Boer',
-    'Evelijn Verboom',
-    'Francesca Andretta',
+    #'Daniel Landre',
+    #'Dorus de Boer',
+    #'Evelijn Verboom',
+    #'Francesca Andretta',
     'Jan Heinen',
     'Jason Moore',
     'Julie van Vlerken',
     'Leila Alizadehsaravi',
-    'Marco Reijne',
+    #'Marco Reijne',
     'Rado Dukalski',
-    'Simonas Drauksas',
-    'Tim Huiskens',
-    'Ajaypal Singh',
-    'Jeswin Koshy Cherian',
+    #'Simonas Drauksas',
+    #'Tim Huiskens', 
+    #'Ajaypal Singh',
+    #'Jeswin Koshy Cherian',
+    #'Jelle Haasnoot',
+    'Sam Brockie',
+    'Timo Stienstra',
+    'Jan van der Schot',
+    'Floris van Willigen',
+    'Andrew Dressel',
+    #'Evelijn Verboom',
+    'Jens Keijser',
+    'Christoph Schmidt',
+    'Kenneth Pasma'
+    
 ]
 
 # NOTE : Make sure spellings match current_members exactly! This should be
@@ -70,6 +81,19 @@ presentations = {
     '2022-03-29': ['Leila Alizadehsaravi'],
     '2022-04-12': ['Francesca Andretta'],
     '2022-04-26': ['Jeswin Koshy Cherian'],
+    '2022-05-10': ['Ajaypal Singh'],
+    '2022-05-24': ['Evelijn Verboom'],
+    '2022-06-07': ['Dorus de Boer'],
+    '2022-06-21': ['Simonas Drauksas'],
+    '2022-06-05': ['Andrew Dressel'],
+    '2022-09-13': ['Jason Moore'],
+    '2022-09-26': ['Rado Dukalski'],
+    '2022-10-11': ['Jens Keijser'],
+    '2022-10-25': ['Julie van Vlerken'],
+    '2022-11-08': ['Jan van der Schot'],
+    '2022-11-22': ['Timo Stienstra']
+  
+
 }
 
 # the longer time since you've presented the higher your chance of being chosen
