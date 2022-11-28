@@ -83,6 +83,7 @@ presentations = {
     '2022-10-25': ['Julie van Vlerken'],
     '2022-11-08': ['Jan van der Schot'],
     '2022-11-22': ['Timo Stienstra'],
+    '2022-12-06': ['Christoph Schmidt'],
 }
 
 # the longer time since you've presented the higher your chance of being chosen
