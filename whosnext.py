@@ -3,9 +3,10 @@ presenter.
 
 How to use:
 
-    1. Update the list of current members.
-    2. Add the most recent presentations.
-    3. Run ``python whosnext.py``
+    1. Update the MC.
+    2. Update the list of current members.
+    3. Add the most recent presentations.
+    4. Run ``python whosnext.py``
 
 Dependencies:
 
@@ -22,32 +23,22 @@ import time
 
 from pyfiglet import figlet_format
 
+current_mc = 'Jan van der Schot'
+
 current_members = [
-    #'Daniel Landre',
-    #'Dorus de Boer',
-    #'Evelijn Verboom',
-    #'Francesca Andretta',
+    'Andrew Dressel',
+    'Christoph Schmidt',
+    'Floris van Willigen',
     'Jan Heinen',
+    'Jan van der Schot',
     'Jason Moore',
+    'Jens Keijser',
     'Julie van Vlerken',
+    'Kenneth Pasma',
     'Leila Alizadehsaravi',
-    #'Marco Reijne',
     'Rado Dukalski',
-    #'Simonas Drauksas',
-    #'Tim Huiskens', 
-    #'Ajaypal Singh',
-    #'Jeswin Koshy Cherian',
-    #'Jelle Haasnoot',
     'Sam Brockie',
     'Timo Stienstra',
-    'Jan van der Schot',
-    'Floris van Willigen',
-    'Andrew Dressel',
-    #'Evelijn Verboom',
-    'Jens Keijser',
-    'Christoph Schmidt',
-    'Kenneth Pasma'
-    
 ]
 
 # NOTE : Make sure spellings match current_members exactly! This should be
@@ -112,7 +103,9 @@ for date, presenters in presentations.items():
 
         if presenter not in current_members:  # no longer in lab
             weights[presenter] = 0
-        elif days_since_pres < 15:  # presented recently
+        elif presenter == current_mc:  # current MC doesn't speak
+            weights[presenter] = 0
+        elif days_since_pres < 63:  # presented recently (within 2 months)
             weights[presenter] = 0
         else:  # 150 if not presented in six months, otherwise scaled
             weights[presenter] = min(150, days_since_pres*6/7)
