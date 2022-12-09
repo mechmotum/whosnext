@@ -23,13 +23,12 @@ import time
 
 from pyfiglet import figlet_format
 
-current_mc = 'Jan van der Schot'
+current_mc = 'Andrew Dressel'
 
 current_members = [
     'Andrew Dressel',
     'Christoph Schmidt',
     'Floris van Willigen',
-    'Jan Heinen',
     'Jan van der Schot',
     'Jason Moore',
     'Jens Keijser',
@@ -39,6 +38,7 @@ current_members = [
     'Rado Dukalski',
     'Sam Brockie',
     'Timo Stienstra',
+    'Kirsten Dijkman',
 ]
 
 # NOTE : Make sure spellings match current_members exactly! This should be
