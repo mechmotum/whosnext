@@ -29,6 +29,7 @@ current_members = [
     'Andrew Dressel',
     'Christoph Schmidt',
     'Floris van Willigen',
+    'Gabriele Dell Orto',
     'Jan van der Schot',
     'Jason Moore',
     'Jens Keijser',
