@@ -40,6 +40,7 @@ current_members = [
     'Sam Brockie',
     'Timo Stienstra',
     'Kirsten Dijkman',
+    'Marten Haitjema',
 ]
 
 # NOTE : Make sure spellings match current_members exactly! This should be
@@ -87,6 +88,7 @@ presentations = {
     '2022-12-06': ['Christoph Schmidt'],
     '2022-12-20': ['Kenneth Pasma'],
     '2023-01-17': ['Floris van Willigen'],
+    '2023-01-31': ['Sam Brockie'],
 }
 
 # the longer time since you've presented the higher your chance of being chosen
