@@ -40,6 +40,7 @@ current_members = [
     'Sam Brockie',
     'Timo Stienstra',
     'Kirsten Dijkman',
+    'Marten Haitjema',
 ]
 
 # NOTE : Make sure spellings match current_members exactly! This should be
