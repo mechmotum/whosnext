@@ -35,12 +35,12 @@ current_members = [
     'Jens Keijser',
     'Julie van Vlerken',
     'Kenneth Pasma',
+    'Kirsten Dijkman',
     'Leila Alizadehsaravi',
+    'Marten Haitjema',
     'Rado Dukalski',
     'Sam Brockie',
     'Timo Stienstra',
-    'Kirsten Dijkman',
-    'Marten Haitjema',
 ]
 
 # NOTE : Make sure spellings match current_members exactly! This should be
