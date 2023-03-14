@@ -91,7 +91,8 @@ presentations = {
     '2023-01-31': ['Sam Brockie'],
     '2023-02-14': ['Rado Dukalski'],
     '2023-02-28': ['Marten Haitjema'],
-    '2023-03-14': ['Julie van Vlerken'],
+    '2023-03-14': ['Leila Alizadehsaravi'],
+    '2023-03-28': ['Andrew Dressel'],
 }
 
 # the longer time since you've presented the higher your chance of being chosen
