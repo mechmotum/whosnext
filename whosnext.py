@@ -26,13 +26,11 @@ from pyfiglet import figlet_format
 current_mc = 'Christoph Schmidt'
 
 current_members = [
-    'Andrew Dressel',
     'Christoph Schmidt',
     'Floris van Willigen',
     'Gabriele Dell Orto',
     'Jan van der Schot',
     'Jason Moore',
-    'Jens Keijser',
     'Julie van Vlerken',
     'Kenneth Pasma',
     'Kirsten Dijkman',
