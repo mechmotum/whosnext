@@ -23,16 +23,14 @@ import time
 
 from pyfiglet import figlet_format
 
-current_mc = 'Andrew Dressel'
+current_mc = 'Christoph Schmidt'
 
 current_members = [
-    'Andrew Dressel',
     'Christoph Schmidt',
     'Floris van Willigen',
     'Gabriele Dell Orto',
     'Jan van der Schot',
     'Jason Moore',
-    'Jens Keijser',
     'Julie van Vlerken',
     'Kenneth Pasma',
     'Kirsten Dijkman',
@@ -93,6 +91,10 @@ presentations = {
     '2023-02-28': ['Marten Haitjema'],
     '2023-03-14': ['Leila Alizadehsaravi'],
     '2023-03-28': ['Andrew Dressel'],
+    '2023-04-11': ['Jason Moore'],
+    '2023-04-25': ['Julie van Vlerken'],
+    '2023-05-09': ['Jan van der Schot'],
+    '2023-05-23': ['Gabriele Dell Orto'],
 }
 
 # the longer time since you've presented the higher your chance of being chosen
