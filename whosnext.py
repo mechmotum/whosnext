@@ -23,7 +23,7 @@ import time
 
 from pyfiglet import figlet_format
 
-current_mc = 'Andrew Dressel'
+current_mc = 'Christoph Schmidt'
 
 current_members = [
     'Andrew Dressel',
