@@ -96,7 +96,7 @@ presentations = {
     '2023-05-09': ['Jan van der Schot'],
     '2023-05-23': ['Gabriele Dell Orto'],
     '2023-06-06': ['Kirsten Dijkman'],
-    '2023-06-20': ['Rado Dukalski'],
+    '2023-06-20': ['Christoph Schmidt'],
     '2023-07-04': ['Sam Brockie'],
 }
 
