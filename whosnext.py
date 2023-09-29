@@ -35,7 +35,7 @@ current_members = [
     'Marten Haitjema',
     'Rado Dukalski',
     'Sam Brockie',
-    'Thomas Habing'
+    'Thomas Habing',
     'Sietse Soethout'
 ]
 
@@ -96,6 +96,9 @@ presentations = {
     '2023-06-06': ['Kirsten Dijkman'],
     '2023-06-20': ['Christoph Schmidt'],
     '2023-07-04': ['Sam Brockie'],
+    '2023-09-19': ['Jason Moore'],
+    '2023-10-10': ['Christoph Schmidt'],
+    '2023-10-10': ['Kenneth Pasma'],
 }
 
 # the longer time since you've presented the higher your chance of being chosen
