@@ -34,7 +34,7 @@ current_members = [
     'Rado Dukalski',
     'Thomas Habing',
     'Sietse Soethout',
-    'Jules Ronne',
+    'Bart de Vries',
 ]
 
 # NOTE : Make sure spellings match current_members exactly! This should be
@@ -97,8 +97,9 @@ presentations = {
     '2023-10-10': ['Christoph Schmidt', 'Kenneth Pasma'],
     '2023-10-24': ['Leila Alizadehsaravi', 'Rado Dukalski'],
     '2023-11-07': ['Jules Ronne'],
-    '2023-11-21-: ['Marten Haitjema','Thomas Habing'],
-    '2024-01-16-: ['Sietse Soethout','Christoph Schmidt'],
+    '2023-11-21': ['Marten Haitjema','Thomas Habing'],
+    '2024-01-16': ['Kenneth Pasma','Christoph Schmidt'],
+    '2024-01-30': ['Gabriele Dell Orto','Sietse Soethout'],
 }
 
 # the longer time since you've presented the higher your chance of being chosen
