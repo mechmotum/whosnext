@@ -27,14 +27,14 @@ current_mc = 'Kenneth Pasma'
 
 current_members = [
     'Christoph Schmidt',
-    'Gabriele Dell Orto',
     'Jason Moore',
     'Kenneth Pasma',
-    'Leila Alizadehsaravi',
     'Rado Dukalski',
     'Thomas Habing',
     'Sietse Soethout',
     'Bart de Vries',
+    'Anna Marbus',
+    'Sara Youngblood',
 ]
 
 # NOTE : Make sure spellings match current_members exactly! This should be
@@ -101,7 +101,8 @@ presentations = {
     '2024-01-16': ['Kenneth Pasma','Christoph Schmidt'],
     '2024-01-30': ['Gabriele Dell Orto','Sietse Soethout'],
     '2024-02-13': ['Marten Haitjema'],
-    '2024-02-27': ['Thomas Habing','Leila Alizadehsaravi'],
+    '2024-02-27': ['Thomas Habing'],
+    '2024-02-27': ['Anna Marbus','Sara Youngblood'],
 }
 
 # the longer time since you've presented the higher your chance of being chosen
