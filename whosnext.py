@@ -27,7 +27,6 @@ current_mc = 'Kenneth Pasma'
 
 current_members = [
     'Christoph Schmidt',
-    'Gabriele Dell Orto',
     'Jason Moore',
     'Kenneth Pasma',
     'Thomas Habing',
@@ -35,6 +34,7 @@ current_members = [
     'Bart de Vries',
     'Anna Marbus',
     'Sara Youngbloud',
+    'Neville Nieman',
 ]
 
 # NOTE : Make sure spellings match current_members exactly! This should be
