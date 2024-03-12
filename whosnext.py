@@ -30,11 +30,11 @@ current_members = [
     'Gabriele Dell Orto',
     'Jason Moore',
     'Kenneth Pasma',
-    'Leila Alizadehsaravi',
-    'Rado Dukalski',
     'Thomas Habing',
     'Sietse Soethout',
     'Bart de Vries',
+    'Anna Marbus',
+    'Sara Youngbloud',
 ]
 
 # NOTE : Make sure spellings match current_members exactly! This should be
