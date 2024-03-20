@@ -34,7 +34,8 @@ current_members = [
     'Sietse Soethout',
     'Bart de Vries',
     'Anna Marbus',
-    'Sara Youngblood',
+    'Sara Youngbloud',
+    'Neville Nieman',
 ]
 
 # NOTE : Make sure spellings match current_members exactly! This should be
@@ -102,7 +103,7 @@ presentations = {
     '2024-01-30': ['Gabriele Dell Orto','Sietse Soethout'],
     '2024-02-13': ['Marten Haitjema'],
     '2024-02-27': ['Thomas Habing'],
-    '2024-02-27': ['Anna Marbus','Sara Youngblood'],
+    '2024-03-12': ['Anna Marbus','Sara Youngbloud'],
 }
 
 # the longer time since you've presented the higher your chance of being chosen
