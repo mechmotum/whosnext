@@ -29,7 +29,6 @@ current_members = [
     'Christoph Schmidt',
     'Jason Moore',
     'Kenneth Pasma',
-    'Rado Dukalski',
     'Thomas Habing',
     'Sietse Soethout',
     'Bart de Vries',
