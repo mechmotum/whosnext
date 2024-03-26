@@ -1,5 +1,5 @@
 """Script to make a weighted random selection for the next lab meeting
-presenter.
+/resenter.
 
 How to use:
 
@@ -33,7 +33,7 @@ current_members = [
     'Sietse Soethout',
     'Bart de Vries',
     'Anna Marbus',
-    'Sara Youngbloud',
+    'Sara Youngblood',
     'Neville Nieman',
 ]
 
@@ -103,8 +103,8 @@ presentations = {
     '2024-02-13': ['Marten Haitjema'],
     '2024-02-27': ['Thomas Habing'],
     '2024-03-12': ['Anna Marbus','Sara Youngbloud'],
-    '2024-03-12': ['Neville Nieman','Jason Moore'],
-    '2024-03-12': ['Bart de Vries','Anna Marbus'],
+    '2024-03-26': ['Neville Nieman','Jason Moore'],
+    '2024-04-09': ['Bart de Vries','Anna Marbus'],
 }
 
 # the longer time since you've presented the higher your chance of being chosen
