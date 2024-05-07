@@ -102,11 +102,12 @@ presentations = {
     '2024-01-30': ['Gabriele Dell Orto','Sietse Soethout'],
     '2024-02-13': ['Marten Haitjema'],
     '2024-02-27': ['Thomas Habing'],
-    '2024-03-12': ['Anna Marbus','Sara Youngbloud'],
+    '2024-03-12': ['Anna Marbus','Sara Youngblood'],
     '2024-03-26': ['Neville Nieman','Jason Moore'],
     '2024-04-09': ['Bart de Vries','Anna Marbus'],
     '2024-04-23': ['Thomas Habing','Sietse Soethout'],
-    '2024-05-07': ['Christoph Schmidt','Sara Youngbloud'],
+    '2024-05-07': ['Christoph Schmidt','Sara Youngblood'],
+    '2024-05-21': ['Neville Nieman', 'Jason Moore'],
 }
 
 # the longer time since you've presented the higher your chance of being chosen
@@ -128,7 +129,11 @@ for date, presenters in presentations.items():
             weights[presenter] = 0
         elif presenter == current_mc:  # current MC doesn't speak
             weights[presenter] = 0
-        elif days_since_pres < 63:  # presented recently (within 2 months)
+        elif days_since_pres <= 28:  # presented recently (within 1 months)
+            #  Alternative:
+            #  (ceil((len(current_members) - #MCs) / #presenters_per_meeting) - (1 + X)) * #days_between_meetings) 
+            #  The 1 in (1+X) is because the endpoint doesn't count (the time beteen 3 meetings is 2 times 14 days).
+            #  Here X is a tuning parameter increase the pool of possible people. It should be a minimum of 1
             weights[presenter] = 0
         else:  # 150 if not presented in six months, otherwise scaled
             weights[presenter] = min(150, days_since_pres*6/7)
