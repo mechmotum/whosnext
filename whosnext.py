@@ -38,10 +38,10 @@ current_members = [
     'Neville Nieman',
 ]
 
-pool_size_tune_par = 2 # Minimum value of 1. Increase the pool of possible people.
 presenters_per_meeting = 2
 days_between_meetings = 14
-free_days_post_pres = (math.ceil((len(current_members) - len(current_mc)) / presenters_per_meeting) - (1 + pool_size_tune_par)) * days_between_meetings #  The 1 in (1+X) is because the endpoint doesn't count (the time beteen 3 meetings is 2 times 14 days).
+people_in_pool = presenters_per_meeting + 2
+free_days_post_pres = (math.ceil((len(current_members) - len(current_mc) - people_in_pool)/presenters_per_meeting) - 1) * days_between_meetings #  The -1 is because the endpoint doesn't count (the time beteen 3 meetings is 2 times 14 days).
 
 # NOTE : Make sure spellings match current_members exactly! This should be
 # sorted oldest (top) to newest (bottom).
