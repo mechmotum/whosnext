@@ -20,10 +20,11 @@ import collections
 import datetime
 import random
 import time
+import math
 
 from pyfiglet import figlet_format
 
-current_mc = 'Kenneth Pasma'
+current_mc = ['Kenneth Pasma']
 
 current_members = [
     'Christoph Schmidt',
@@ -36,6 +37,11 @@ current_members = [
     'Sara Youngblood',
     'Neville Nieman',
 ]
+
+presenters_per_meeting = 2
+days_between_meetings = 14
+people_in_pool = presenters_per_meeting + 2
+free_days_post_pres = (math.ceil((len(current_members) - len(current_mc) - people_in_pool)/presenters_per_meeting) - 1) * days_between_meetings #  The -1 is because the endpoint doesn't count (the time beteen 3 meetings is 2 times 14 days).
 
 # NOTE : Make sure spellings match current_members exactly! This should be
 # sorted oldest (top) to newest (bottom).
@@ -127,13 +133,9 @@ for date, presenters in presentations.items():
 
         if presenter not in current_members:  # no longer in lab
             weights[presenter] = 0
-        elif presenter == current_mc:  # current MC doesn't speak
+        elif presenter == current_mc[0]:  # current MC doesn't speak
             weights[presenter] = 0
-        elif days_since_pres <= 28:  # presented recently (within 1 months)
-            #  Alternative:
-            #  (ceil((len(current_members) - #MCs) / #presenters_per_meeting) - (1 + X)) * #days_between_meetings) 
-            #  The 1 in (1+X) is because the endpoint doesn't count (the time beteen 3 meetings is 2 times 14 days).
-            #  Here X is a tuning parameter increase the pool of possible people. It should be a minimum of 1
+        elif days_since_pres <= free_days_post_pres:  # presented recently
             weights[presenter] = 0
         else:  # 150 if not presented in six months, otherwise scaled
             weights[presenter] = min(150, days_since_pres*6/7)
