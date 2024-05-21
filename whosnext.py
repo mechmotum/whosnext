@@ -113,7 +113,8 @@ presentations = {
     '2024-04-09': ['Bart de Vries','Anna Marbus'],
     '2024-04-23': ['Thomas Habing','Sietse Soethout'],
     '2024-05-07': ['Christoph Schmidt','Sara Youngblood'],
-    '2024-05-21': ['Neville Nieman', 'Jason Moore'],
+    '2024-05-21': ['Bart de Vries', 'Jason Moore'],
+    '2024-06-04': ['Anna Marbus', 'Sietse Soethout'],
 }
 
 # the longer time since you've presented the higher your chance of being chosen
