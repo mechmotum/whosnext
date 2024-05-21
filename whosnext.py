@@ -113,7 +113,8 @@ presentations = {
     '2024-04-09': ['Bart de Vries','Anna Marbus'],
     '2024-04-23': ['Thomas Habing','Sietse Soethout'],
     '2024-05-07': ['Christoph Schmidt','Sara Youngblood'],
-    '2024-05-21': ['Neville Nieman', 'Jason Moore'],
+    '2024-05-21': ['Bart de Vries', 'Jason Moore'],
+    # '2024-06-04': ['Anna Marbus', 'Sietse Soethout'],
 }
 
 # the longer time since you've presented the higher your chance of being chosen
@@ -122,43 +123,46 @@ presentations = {
 # if you gave one last week you don't have to go next
 # TODO : if you are a new member, don't choose in first month after joining
 
+#--[Parse presentation history
 weights = {}
-
+counts = collections.defaultdict(int)
 for date, presenters in presentations.items():
 
     pres_date = datetime.datetime.strptime(date, '%Y-%m-%d')
     days_since_pres = (datetime.datetime.now() - pres_date).days
+    weeks_since_pres = days_since_pres/7
 
     for presenter in presenters:
 
+        # Set initial weights
         if presenter not in current_members:  # no longer in lab
-            weights[presenter] = 0
+            pass
         elif presenter == current_mc[0]:  # current MC doesn't speak
             weights[presenter] = 0
         elif days_since_pres <= free_days_post_pres:  # presented recently
             weights[presenter] = 0
         else:  # 150 if not presented in six months, otherwise scaled
             weights[presenter] = min(150, days_since_pres*6/7)
+        
+        # Scaling factor: Count all presentations done in the last year
+        if weeks_since_pres < 52:
+            if presenter in current_members:
+                counts[presenter] += 1
 
+
+#--[Weight adjustments: special rules
 # If a member hasn't presented at all set weight to 150.
 for member in current_members:
     if member not in weights.keys():
         weights[member] = 150
-
-# Count all presentations done in the last year
-counts = collections.defaultdict(int)
-for date, presenters in presentations.items():
-    pres_date = datetime.datetime.strptime(date, '%Y-%m-%d')
-    weeks_since_pres = (datetime.datetime.now() - pres_date).days/7
-    if weeks_since_pres < 52:
-        for presenter in presenters:
-            counts[presenter] += 1
 
 # Lower the weighting if you've presented alot in the last year
 for person, count in counts.items():
     adjusted = weights[person] - count*10
     weights[person] = max(0, adjusted)
 
+
+#--[Selection
 # Select a primary presenter for next week!
 choice = random.choices(current_members,
                         weights=[weights[k] for k in current_members])
