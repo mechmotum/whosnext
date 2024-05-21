@@ -22,6 +22,7 @@ import random
 import time
 import math
 
+from collections import Counter
 from pyfiglet import figlet_format
 
 current_mc = ['Kenneth Pasma']
@@ -163,9 +164,14 @@ for person, count in counts.items():
 
 
 #--[Selection
-# Select a primary presenter for next week!
-choice = random.choices(current_members,
-                        weights=[weights[k] for k in current_members])
+# Select primary presenter(s) for next meeting!
+while True:
+    choice = random.choices(current_members,
+                            weights=[weights[k] for k in current_members],
+                            k=presenters_per_meeting)
+
+    if not sum([1 for q,v in Counter(choice).items() if v>1]):
+        break
 
 # Print the roulette to the screen!
 for speed in range(6):
@@ -176,5 +182,6 @@ for speed in range(6):
 
 print(figlet_format('='*30, font='starwars', width=500))
 print(figlet_format('Winner is!:', font='starwars', width=500))
-print(figlet_format(choice[0], font='starwars', width=500))
+for winners in choice:
+    print(figlet_format(winners, font='starwars', width=500))
 print(figlet_format('='*30, font='starwars', width=500))
