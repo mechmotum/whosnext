@@ -37,6 +37,7 @@ current_members = [
     'Anna Marbus',
     'Sara Youngblood',
     'Neville Nieman',
+    'Simon Sorgedrager',
 ]
 
 presenters_per_meeting = 2
@@ -115,7 +116,8 @@ presentations = {
     '2024-04-23': ['Thomas Habing','Sietse Soethout'],
     '2024-05-07': ['Christoph Schmidt','Sara Youngblood'],
     '2024-05-21': ['Bart de Vries', 'Jason Moore'],
-    # '2024-06-04': ['Anna Marbus', 'Sietse Soethout'],
+    '2024-06-04': ['Anna Marbus', 'Sietse Soethout'],
+    '2024-06-25': ['Thomas Habing', 'Neville Nieman'],
 }
 
 # the longer time since you've presented the higher your chance of being chosen
@@ -140,7 +142,7 @@ for date, presenters in presentations.items():
             pass
         elif presenter == current_mc[0]:  # current MC doesn't speak
             weights[presenter] = 0
-        elif days_since_pres <= free_days_post_pres:  # presented recently
+        elif days_since_pres < free_days_post_pres:  # presented recently
             weights[presenter] = 0
         else:  # 150 if not presented in six months, otherwise scaled
             weights[presenter] = min(150, days_since_pres*6/7)
@@ -165,13 +167,10 @@ for person, count in counts.items():
 
 #--[Selection
 # Select primary presenter(s) for next meeting!
-while True:
-    choice = random.choices(current_members,
-                            weights=[weights[k] for k in current_members],
-                            k=presenters_per_meeting)
-
-    if not sum([1 for q,v in Counter(choice).items() if v>1]):
-        break
+choice = []
+for i in range(presenters_per_meeting):
+    choice.append(random.choices(current_members, weights=[weights[k] for k in current_members]))
+    weights[choice[i][0]] = 0.
 
 # Print the roulette to the screen!
 for speed in range(6):
@@ -182,6 +181,8 @@ for speed in range(6):
 
 print(figlet_format('='*30, font='starwars', width=500))
 print(figlet_format('Winner is!:', font='starwars', width=500))
-for winners in choice:
-    print(figlet_format(winners, font='starwars', width=500))
+for j, winners in enumerate(choice):
+    print(figlet_format(winners[0], font='starwars', width=500))
+    if j < presenters_per_meeting-1:
+        print(figlet_format(' '*30+'&', font='starwars', width=500))
 print(figlet_format('='*30, font='starwars', width=500))
