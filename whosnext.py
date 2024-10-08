@@ -30,14 +30,15 @@ current_mc = ['Kenneth Pasma']
 current_members = [
     'Christoph Schmidt',
     'Jason Moore',
-    'Kenneth Pasma',
     'Thomas Habing',
-    'Sietse Soethout',
     'Bart de Vries',
     'Anna Marbus',
     'Sara Youngblood',
     'Neville Nieman',
     'Simon Sorgedrager',
+    'Benjamin Gonzalez'
+    'Eloy Vasquez'
+    'Ralf Rienks'
 ]
 
 presenters_per_meeting = 2
@@ -118,6 +119,8 @@ presentations = {
     '2024-05-21': ['Bart de Vries', 'Jason Moore'],
     '2024-06-04': ['Anna Marbus', 'Sietse Soethout'],
     '2024-06-25': ['Thomas Habing', 'Neville Nieman'],
+    '2024-09-24': ['Jason Moore', 'Simon Sorgedrager'],
+    '2024-10-08': ['Anna Marbus', 'Sara Youngblood'],
 }
 
 # the longer time since you've presented the higher your chance of being chosen
@@ -167,10 +170,12 @@ for person, count in counts.items():
 
 #--[Selection
 # Select primary presenter(s) for next meeting!
-choice = []
+choice = set()
 for i in range(presenters_per_meeting):
-    choice.append(random.choices(current_members, weights=[weights[k] for k in current_members]))
-    weights[choice[i][0]] = 0.
+    remaining_members = [member for member in current_members if member not in choice]
+    remaining_weights = [weights[member] for member in remaining_members]
+    chosen = random.choices(remaining_members, weights=remaining_weights, k=1)[0]
+    choice.add(chosen)
 
 # Print the roulette to the screen!
 for speed in range(6):
