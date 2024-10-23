@@ -203,7 +203,8 @@ if ROULETTE:
 
 print(figlet_format('='*20, font='starwars', width=500))
 print(figlet_format('Winner is!:', font='starwars', width=500))
-print(figlet_format(choice[0], font='starwars', width=500))
-print(figlet_format(' '*20+'&', font='starwars', width=500))
-print(figlet_format(choice[1], font='starwars', width=500))
+for winner in choice:
+    print(figlet_format(winner, font='starwars', width=500))
+    if winner != choice[-1]:
+        print(figlet_format(' '*20+'&', font='starwars', width=500))
 print(figlet_format('='*20, font='starwars', width=500))
