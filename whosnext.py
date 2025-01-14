@@ -27,18 +27,20 @@ ROULETTE = True
 
 presenters_per_meeting = 2
 
-current_mc = 'Thomas Habing'
+current_mc = 'Anna Marbus'
 
 current_members = [
+    "Gabriele Dell'Orto",
     'Anna Marbus',
     'Bart de Vries',
     'Benjamin Gonzalez',
-    'Christoph Schmidt',
+    'Christoph Konrad',
     'Eloy Vasquez',
     'Jason Moore',
     'Jose Farias',
+    'Jules Ronne',
+    'Looka Schoneveld',
     'Neville Nieman',
-    'Ralf Rienks',
     'Sara Youngblood',
     'Simon Sorgedrager',
     'Thomas Habing',
@@ -86,7 +88,7 @@ presentations = {
     '2022-10-25': ['Julie van Vlerken'],
     '2022-11-08': ['Jan van der Schot'],
     '2022-11-22': ['Timo Stienstra'],
-    '2022-12-06': ['Christoph Schmidt'],
+    '2022-12-06': ['Christoph Konrad'],
     '2022-12-20': ['Kenneth Pasma'],
     '2023-01-17': ['Floris van Willigen'],
     '2023-01-31': ['Sam Brockie'],
@@ -99,13 +101,13 @@ presentations = {
     '2023-05-09': ['Jan van der Schot'],
     '2023-05-23': ['Gabriele Dell Orto'],
     '2023-06-06': ['Kirsten Dijkman'],
-    '2023-06-20': ['Christoph Schmidt'],
+    '2023-06-20': ['Christoph Konrad'],
     '2023-07-04': ['Sam Brockie'],
-    '2023-10-10': ['Christoph Schmidt', 'Kenneth Pasma'],
+    '2023-10-10': ['Christoph Konrad', 'Kenneth Pasma'],
     '2023-10-24': ['Leila Alizadehsaravi', 'Rado Dukalski'],
     '2023-11-07': ['Jules Ronne'],
     '2023-11-21': ['Marten Haitjema', 'Thomas Habing'],
-    '2024-01-16': ['Kenneth Pasma', 'Christoph Schmidt'],
+    '2024-01-16': ['Kenneth Pasma', 'Christoph Konrad'],
     '2024-01-30': ['Gabriele Dell Orto', 'Sietse Soethout'],
     '2024-02-13': ['Marten Haitjema'],
     '2024-02-27': ['Thomas Habing'],
@@ -113,7 +115,7 @@ presentations = {
     '2024-03-26': ['Neville Nieman', 'Jason Moore'],
     '2024-04-09': ['Bart de Vries', 'Anna Marbus'],
     '2024-04-23': ['Thomas Habing', 'Sietse Soethout'],
-    '2024-05-07': ['Christoph Schmidt', 'Sara Youngblood'],
+    '2024-05-07': ['Christoph Konrad', 'Sara Youngblood'],
     '2024-05-21': ['Bart de Vries', 'Jason Moore'],
     '2024-06-04': ['Anna Marbus', 'Sietse Soethout'],
     '2024-06-25': ['Thomas Habing', 'Neville Nieman'],
@@ -121,7 +123,12 @@ presentations = {
     '2024-09-10': ['Jason Moore'],
     '2024-09-24': ['Jason Moore', 'Simon Sorgedrager'],
     '2024-10-08': ['Anna Marbus', 'Sara Youngblood'],
-    '2024-10-22': ['Christoph Schmidt', 'Neville Nieman'],
+    '2024-10-22': ['Christoph Konrad', 'Neville Nieman'],
+    '2024-11-05': ['Benjamin Gonzalez', 'Eloy Vasquez'],
+    '2024-11-19': ['Bart de Vries', 'Simon Sorgedrager'],
+    '2024-12-03': ['Eloy Vasquez', 'Thomas Valk'],
+    '2024-12-17': ['Christoph Konrad', 'Jason Moore'],
+    '2025-01-18': ['Neville Nieman'],
 }
 
 # the longer time since you've presented the higher your chance of being chosen
