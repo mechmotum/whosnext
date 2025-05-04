@@ -27,23 +27,20 @@ ROULETTE = True
 
 presenters_per_meeting = 2
 
-current_mc = 'Anna Marbus'
+current_mc = 'Looka Schoneveld'
 
 current_members = [
-    "Gabriele Dell'Orto",
-    'Anna Marbus',
     'Bart de Vries',
     'Benjamin Gonzalez',
     'Christoph Konrad',
-    'Eloy Vasquez',
+    'Eloy Vazquez',
     'Jason Moore',
-    'Jose Farias',
-    'Jules Ronne',
+    'Jules Ronné',
     'Looka Schoneveld',
     'Neville Nieman',
+    'Ruben Terwint',
     'Sara Youngblood',
-    'Simon Sorgedrager',
-    'Thomas Habing',
+    'Yuke Huang',
 ]
 
 # NOTE : Make sure spellings match current_members exactly! This should be
@@ -124,11 +121,17 @@ presentations = {
     '2024-09-24': ['Jason Moore', 'Simon Sorgedrager'],
     '2024-10-08': ['Anna Marbus', 'Sara Youngblood'],
     '2024-10-22': ['Christoph Konrad', 'Neville Nieman'],
-    '2024-11-05': ['Benjamin Gonzalez', 'Eloy Vasquez'],
+    '2024-11-05': ['Eloy Vazquez', 'Benjamin Gonzalez'],
     '2024-11-19': ['Bart de Vries', 'Simon Sorgedrager'],
-    '2024-12-03': ['Eloy Vasquez', 'Thomas Valk'],
+    '2024-12-03': ['Eloy Vazquez', 'Thomas Valk'],
     '2024-12-17': ['Christoph Konrad', 'Jason Moore'],
-    '2025-01-18': ['Neville Nieman'],
+    '2025-01-14': ['Neville Nieman'],
+    '2025-01-28': ['Gabriele Dell Orto','Bart de Vries'],
+    '2025-03-11': ['Jules Ronne','Jose Farias'],
+    '2025-03-25': ['Eloy Vazquez','Simon Sorgedrager'],
+    '2025-04-08': ['Looka Schoneveld','Benjamin Gonzalez'],
+    '2025-04-22': ['Eloy Vazquez', 'Yuke Huang'],
+    '2025-05-06': ['Christoph Konrad', 'Sara Youngblood'],
 }
 
 # the longer time since you've presented the higher your chance of being chosen
