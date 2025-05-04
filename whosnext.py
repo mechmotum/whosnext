@@ -27,7 +27,7 @@ ROULETTE = True
 
 presenters_per_meeting = 2
 
- current_mc = 'Looka Schoneveld'
+current_mc = 'Looka Schoneveld'
 
 current_members = [
     'Bart de Vries',
@@ -39,7 +39,6 @@ current_members = [
     'Sara Youngblood',
     'Jules Ronné',
     'Looka Schoneveld',
-    'Ruben Terwint',
     'Yuke Huang',
     'Ruben Terwint',
 ]
