@@ -132,3 +132,18 @@ for winner in choice:
     if winner != choice[-1]:
         print(figlet_format(' '*20+'&', font='starwars', width=500))
 print(figlet_format('='*20, font='starwars', width=500))
+
+
+# Add chosen presenters to presentations.json
+_ = input("")
+add = input("Add presenters to memory? (y/n) ").strip()
+if add == "y" or add == "yes":
+    next_date = datetime.datetime.today() + datetime.timedelta(weeks=2)
+    next_pres_date = next_date.strftime("%Y-%m-%d")
+    presentations[next_pres_date] = choice
+    print(f"Added '{list(presentations.keys())[-1]}: {list(presentations.values())[-1]}' to memory.")
+else:
+    print("Presenters not added")
+
+with open("presentations.json", "w", encoding="utf-8") as f:
+    json.dump(presentations, f, indent=4, ensure_ascii=False)
