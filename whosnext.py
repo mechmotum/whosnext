@@ -40,7 +40,6 @@ current_members = [
     'Looka Schoneveld',
     'Neville Nieman',
     'Ruben Terwint',
-    'Sara Youngblood',
     'Yuke Huang',
 ]
 
