@@ -29,22 +29,18 @@ ROULETTE = True
 presenters_per_meeting = 2
 
 current_mc = 'Looka Schoneveld'
-
-current_members = [
-    'Bart de Vries',
-    'Benjamin Gonzalez',
-    'Christoph Konrad',
-    'Eloy Vazquez',
-    'Jason Moore',
-    'Jules Ronné',
-    'Looka Schoneveld',
-    'Neville Nieman',
-    'Ruben Terwint',
-    'Yuke Huang',
-]
-
-# NOTE : Make sure spellings match current_members exactly! This should be
-# sorted oldest (top) to newest (bottom).
+current_members = { # TODO: fix actual joining dates of the members
+    "Bart de Vries": "2024-01-01",
+    "Benjamin Gonzalez": "2024-01-01",
+    "Christoph Konrad": "2024-01-01",
+    "Eloy Vazquez": "2024-01-01",
+    "Jason Moore": "2024-01-01",
+    "Jules Ronné": "2024-01-01",
+    "Looka Schoneveld": "2024-11-01",
+    "Neville Nieman": "2024-01-01",
+    "Ruben Terwint": "2024-01-01",
+    "Yuke Huang": "2024-01-01"
+}
 with open("presentations.json", "r", encoding="utf-8") as file:
     presentations = json.load(file)
 
@@ -52,7 +48,7 @@ with open("presentations.json", "r", encoding="utf-8") as file:
 # the fewer times you've presented the higher chance of being chosen
 # if you aren't a current member, no chance you are chosen
 # if you gave one last week you don't have to go next
-# TODO : if you are a new member, don't choose in first month after joining
+# if you are a new member, don't choose in first month after joining
 
 # Parse presentation history
 weights = {}
@@ -88,9 +84,15 @@ print('\n')
 
 # If a member hasn't presented at all set weight to 180, same as not presented
 # in 6 months.
-for member in current_members:
+for member, date in current_members.items():
+    join_date = datetime.datetime.strptime(date, '%Y-%m-%d')
+    days_since_join = (datetime.datetime.today() - join_date).days
+    weeks_since_join = days_since_join/7
     if member not in weights.keys():
-        weights[member] = 180
+        if weeks_since_join <=4:
+            weights[member] = 0
+        else:
+            weights[member] = 180
 
 print("After adding members that haven't presented")
 print(weights)
@@ -120,8 +122,9 @@ for i in range(presenters_per_meeting):
 # Print the roulette to the screen!
 if ROULETTE:
     for speed in range(6):
-        random.shuffle(current_members)
-        for name in current_members:
+        current_members_list = list(current_members.keys())
+        random.shuffle(current_members_list)
+        for name in current_members_list:
             print(figlet_format(name, font='starwars', width=500))
             time.sleep(speed/20)
 
@@ -144,6 +147,3 @@ if add == "y" or add == "yes":
     print(f"Added '{list(presentations.keys())[-1]}: {list(presentations.values())[-1]}' to memory.")
 else:
     print("Presenters not added")
-
-with open("presentations.json", "w", encoding="utf-8") as f:
-    json.dump(presentations, f, indent=4, ensure_ascii=False)
