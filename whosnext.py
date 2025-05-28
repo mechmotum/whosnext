@@ -29,17 +29,17 @@ ROULETTE = True
 presenters_per_meeting = 2
 
 current_mc = 'Looka Schoneveld'
-current_members = { # TODO: fix actual joining dates of the members
+current_members = {
     "Bart de Vries": "2024-01-01",
-    "Benjamin Gonzalez": "2024-01-01",
-    "Christoph Konrad": "2024-01-01",
-    "Eloy Vazquez": "2024-01-01",
-    "Jason Moore": "2024-01-01",
-    "Jules Ronné": "2024-01-01",
+    "Benjamin Gonzalez": "2024-09-01",
+    "Christoph Konrad": "2022-10-01",
+    "Eloy Vazquez": "2024-09-01",
+    "Jason Moore": "2019-09-01",
+    "Jules Ronné": "2023-10-01",
     "Looka Schoneveld": "2024-11-01",
-    "Neville Nieman": "2024-01-01",
-    "Ruben Terwint": "2024-01-01",
-    "Yuke Huang": "2024-01-01"
+    "Neville Nieman": "2024-08-01",
+    "Ruben Terwint": "2025-03-01",
+    "Yuke Huang": "2025-02-01"
 }
 with open("presentations.json", "r", encoding="utf-8") as file:
     presentations = json.load(file)
