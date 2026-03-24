@@ -37,8 +37,7 @@ current_members = {
     "Jason Moore": "2019-09-01",
     "Looka Schoneveld": "2024-11-01",
     "Neville Nieman": "2024-08-01",
-    "Yuke Huang": "2025-02-01",
-	"Dana van der Pol": "2025-06-03",
+    "Dana van der Pol": "2025-06-03",
     "Quinten Bongers": "2025-08-22",
     "Stephen Lin": "2025-10-21",
     "Luna Compen": "2025-11-11",
@@ -46,7 +45,8 @@ current_members = {
     "Floris Mostert": "2025-11-11",
     "Haye Boonstra": "2025-12-02",
     "Philipp Jonas": "2026-01-16",
-    "Joris Scholten": "2026-02-10"
+    "Joris Scholten": "2026-02-10",
+    "Matthijs van den Broek": "2026-03-24",
 }
 with open("presentations.json", "r", encoding="utf-8") as file:
     presentations = json.load(file)
